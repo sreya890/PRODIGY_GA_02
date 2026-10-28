@@ -14,6 +14,24 @@ pre-trained Stable Diffusion model.
 - Streamlit
 - Google Colab GPU
 
+  ⚙️ System Architecture
+
+The user enters a text prompt through the Streamlit interface.
+
+The frontend sends the prompt to the FastAPI backend.
+
+The backend passes the prompt to the pre-trained Stable Diffusion model.
+
+The model generates an image based on the description.
+
+The generated image is converted into Base64 format and returned through the API.
+
+The frontend decodes and displays the image.
+
+The user can download the generated image.
+
+
+
 ## Workflow
 
 User enters a text prompt
